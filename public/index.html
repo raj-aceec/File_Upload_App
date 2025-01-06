@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Simple</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <center>
+        <h2>Upload Your File</h2>
+    </center>
+    <div id="drop-area">
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="file-input" name="file">
+            <br><br>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+    <center>
+        <div id="link-area" class="hidden">
+            <p>File uploaded successfully. Download it here:</p>
+            <a id="download-link" href="#" target="_blank">Download File</a>
+        </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
