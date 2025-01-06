@@ -1,18 +1,25 @@
-## File Upload Application
-1. Install the dependencies "npm init"
-2. Start the server "node server.js"
+# File Upload Application
 
-## Front End
-1. Index.html :- Used to Upload the File
-2. Style.css :- Used to apply some styles
-3. Script.js :- Used to send the file to the backend using POST request
+This is a Node.js application for uploading files to a server. It allows users to upload files, view uploaded files, and download them. The application uses `multer` middleware for handling file uploads and is designed to be simple and efficient.
 
-## Back End
-1. It has a route that accepts the POST requests for file uploads
-2. It has a middleware to handle file uploads (multer)
-3. It responds to the client with the download link
+## Features
 
-## Restrictions
-1. It accepts only .png .pdf .docx file formats
-2. The file should not exceed 2MB
-3. If it is a image the dimension should be less than 400*300 pixels
+- Upload files of any type.
+- View a list of uploaded files.
+- Download files from the server.
+- File size restrictions for uploads.
+- Handles file naming conflicts to prevent overwriting.
+
+## Tech Stack
+
+- **Backend:** Node.js, Express
+- **File Handling:** Multer
+- **Frontend:** HTML, CSS, JavaScript
+- **Storage:** Local file system
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/raj-aceec/file_upload_app.git
+   cd file-upload-app
